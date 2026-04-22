@@ -1,6 +1,6 @@
 # Home Credit - Credit Risk Model Stability
 
-University assignment on Kaggle competition.
+Kaggle competition.
 
 ## Setup
 
@@ -16,6 +16,8 @@ cd data/raw && unzip home-credit-credit-risk-model-stability.zip && cd ../..
 ```
 
 ## Team
-- [Your name]
-- [Colleague's name]
-EOF
+- Imbrea Giulia
+- Goidan Maeti
+
+KGAT_01f9c1d1ec9506c103d2b008cef294ce
+
