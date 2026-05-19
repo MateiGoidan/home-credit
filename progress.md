@@ -29,6 +29,8 @@ reg_lambda:        0.378
 ## Rulat pe Kaggle
 
 Notebook executat: `notebooks/06_lightGBM_improved_executed.ipynb`  
+Link Kaggle: https://www.kaggle.com/code/giuliastefaniaimbrea/06-improved-optuna-with-best-params
+
 Same features ca Sub 2 (depth-0 + 4 depth-1 + stability filter, 673 features).  
 Best params din Optuna hardcodați direct.
 
@@ -53,7 +55,8 @@ Fisiere: `submissions/submission_05_lgbm_improved.csv`, `submissions/lgbm_test_p
 
 ## Sub 6 — Improved Ensemble (în curs)
 
-Notebook: `notebooks/06_ensemble_improved_kaggle.ipynb` (copie din `05_ensemble_kaggle.ipynb` al colegului, fără modificări la original)
+Notebook: `notebooks/06_ensemble_improved_kaggle.ipynb` (copie din `05_ensemble_kaggle.ipynb` al colegului, fără modificări la original)  
+Link Kaggle: https://www.kaggle.com/code/giuliastefaniaimbrea/06-ensemble-improved-kaggle
 
 **Diferența față de Sub 4:** LightGBM-ul din ensemble e antrenat cu best params din Optuna (Sub 5), nu cu defaultul colegului. CatBoost rămâne identic.
 
