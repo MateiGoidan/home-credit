@@ -53,16 +53,20 @@ Fisiere: `submissions/submission_05_lgbm_improved.csv`, `submissions/lgbm_test_p
 
 ---
 
-## Sub 6 — Improved Ensemble (în curs)
+## Sub 6 — Improved Ensemble
 
 Notebook: `notebooks/06_ensemble_improved_kaggle.ipynb` (copie din `05_ensemble_kaggle.ipynb` al colegului, fără modificări la original)  
 Link Kaggle: https://www.kaggle.com/code/giuliastefaniaimbrea/06-ensemble-improved-kaggle
 
 **Diferența față de Sub 4:** LightGBM-ul din ensemble e antrenat cu best params din Optuna (Sub 5), nu cu defaultul colegului. CatBoost rămâne identic.
 
-**Notă:** Nu am putut folosi direct `lgbm_test_preds.npy` din Sub 5 pentru că Kaggle re-rulează notebook-ul cu un test set ascuns la submit — predicțiile pre-salvate ar avea lungime greșită. Soluția: antrenăm LightGBM în notebook cu best params (hardcodați).
+**Rezultat:**
+- Public score: **0.48513**
+- Private score: **0.40289**
 
-✅ Uploadat pe Kaggle, **Save & Run All cu GPU T4 x2** — aștept scorul.
+Sub 6 e mai slab decât Sub 4 (0.4904 / 0.4142). Params Optuna optimizați pe walk-forward CV local au îmbunătățit scorul de validare (0.6401 → 0.6541), dar nu au generalizat pe test set-ul ascuns — același pattern ca Sub 2 vs Sub 1.
+
+**Concluzie:** Sub 4 rămâne cea mai bună submisie.
 
 ---
 
@@ -75,11 +79,6 @@ Link Kaggle: https://www.kaggle.com/code/giuliastefaniaimbrea/06-ensemble-improv
 | Sub 3 | CatBoost depth-1 (coleg) | 0.4781 | 0.3903 |
 | Sub 4 | Ensemble LightGBM + CatBoost (coleg) | **0.4904** | **0.4142** |
 | Sub 5 | LightGBM improved (Optuna + walk-forward CV) | 0.4859 | 0.3890 |
-| Sub 6 | Improved LightGBM + CatBoost Ensemble | _în curs_ | _în curs_ |
+| Sub 6 | Improved LightGBM + CatBoost Ensemble | 0.48513 | 0.40289 |
 
----
-
-## TO DO
-
-1. Aștept scorul Sub 6 pe Kaggle
-2. Compară Sub 6 cu Sub 4 (0.4904 public) — dacă e mai bun, devine best submission
+**Best submission: Sub 4** (0.4904 public / 0.4142 private).
