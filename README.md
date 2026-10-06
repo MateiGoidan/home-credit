@@ -19,5 +19,3 @@ cd data/raw && unzip home-credit-credit-risk-model-stability.zip && cd ../..
 - Imbrea Giulia
 - Goidan Maeti
 
-KGAT_01f9c1d1ec9506c103d2b008cef294ce
-
